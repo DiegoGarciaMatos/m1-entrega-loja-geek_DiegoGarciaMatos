@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {box-sizing: border-box;}
+
+body{
+    background-color: #FFFFFF;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid #86838350 1.5px;
+    position: fixed;
+    top: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 74px;
+}
+
+nav div.logo{
+    margin-left: 20px;
+}
+
+nav div.botoes{
+    margin-right: 20px;
+}
+
+div.container{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+nav div.botoes button{
+    width: 150px;
+    height: 40px;
+    color: #0A99FE;
+    background-color: #0A99FE10;
+    border: transparent;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+    transition: 0.3s ease;
+}
+
+nav div.botoes button:hover{
+    cursor: pointer;
+    background-color: #0a98fee7;
+    color: #FFFFFF;
+    transition: 0.3s ease;
+}
+
+main{
+    margin-top: 100px;
+}
+
+main section.secao_div{
+    margin: 50px auto;
+    overflow-x: auto;
+}
+
+.titulo {
+    color: #1B1B1B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li.produto {
+    display: flex;
+    flex-direction: column;
+    min-width: 207px;
+    height: 275px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin-right: 25px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    border: 2px transparent solid;
+    transition: 0.3s ease ;
+}
+
+ul li.produto:hover{
+    border: #0A99FE 2px solid;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.imagem_produto{
+    width: 100%;
+    object-fit: cover;
+    height: 60%;
+    border-radius: 8px;
+}
+
+ul li.produto h2{
+    color: #1B1B1B;
+    font-size: 20px;
+    font-weight: 550;
+    margin: 10px auto;
+}
+
+ul li.produto p{
+    color: #868383;
+    font-size: 16px;
+    font-weight: 550;
+    margin: 10px auto;
+}
